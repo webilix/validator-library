@@ -3,14 +3,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.STRING = void 0;
 const regex_library_1 = require("regex-library");
 exports.STRING = {
-    isEmail: (value) => regex_library_1.RrgX.EMAIL.get().test(value.toLowerCase()),
-    isUrl: (value) => regex_library_1.RrgX.URL.get(true).test(value),
-    isMobile: (value) => regex_library_1.RrgX.MOBILE.get().test(value),
-    isNumeric: (value) => regex_library_1.RrgX.NUMERIC.get().test(value),
-    isDomain: (value) => regex_library_1.RrgX.DOMAIN.get().test(value),
-    isDate: (value) => regex_library_1.RrgX.DATE.get().test(value),
-    isTime: (value) => regex_library_1.RrgX.TIME.get().test(value),
-    isJsonDate: (value) => regex_library_1.RrgX.JSON_DATE.get().test(value),
+    isEmail: (value) => regex_library_1.RegX.EMAIL.get().test(value.toLowerCase()),
+    isUrl: (value) => regex_library_1.RegX.URL.get(true).test(value),
+    isMobile: (value) => regex_library_1.RegX.MOBILE.get().test(value),
+    isNumeric: (value) => regex_library_1.RegX.NUMERIC.get().test(value),
+    isDomain: (value) => regex_library_1.RegX.DOMAIN.get().test(value),
+    isDate: (value) => regex_library_1.RegX.DATE.get().test(value),
+    isTime: (value) => regex_library_1.RegX.TIME.get().test(value),
+    isJsonDate: (value) => regex_library_1.RegX.JSON_DATE.get().test(value),
     isObjectId: (value) => {
         if (value.length === 12) {
             const bytes = Buffer.from(value);
