@@ -1,0 +1,34 @@
+{
+    "name": "validator-library",
+    "version": "1.0.0",
+    "description": "Data validator library",
+    "main": "./dist/index.js",
+    "scripts": {
+        "start": "tsc --watch",
+        "build": "tsc",
+        "test": "jest --verbose ./dist/test"
+    },
+    "keywords": [
+        "validator",
+        "validation"
+    ],
+    "author": "Ali Amirnezhad",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/webilix/validator-library.git"
+    },
+    "bugs": {
+        "url": "https://github.com/webilix/validator-library/issues"
+    },
+    "homepage": "https://github.com/webilix/validator-library#readme",
+    "devDependencies": {
+        "@types/jest": "^27.4.1",
+        "@types/typescript": "^2.0.0",
+        "jest": "^27.5.1",
+        "typescript": "^4.6.2"
+    },
+    "dependencies": {
+        "regex-library": "^1.0.2"
+    }
+}
