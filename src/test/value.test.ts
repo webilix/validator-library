@@ -1,5 +1,25 @@
 import { VALUE } from '../lib/value';
 
+test(`VALUE: isNull`, () => {
+    const tests: { value: any; result: boolean }[] = [
+        { value: null, result: true },
+        { value: undefined, result: true },
+        { value: '', result: false },
+        { value: [], result: false },
+        { value: {}, result: false },
+        { value: 'string', result: false },
+        { value: 123, result: false },
+        { value: true, result: false },
+        { value: new Date(), result: false },
+        { value: [1], result: false },
+        { value: { key: 'value' }, result: false },
+    ];
+
+    tests.forEach((test) => {
+        expect(VALUE.isNull(test.value)).toBe(test.result);
+    });
+});
+
 test(`VALUE: isEmpty`, () => {
     const tests: { value: any; result: boolean }[] = [
         { value: null, result: true },

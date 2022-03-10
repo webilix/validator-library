@@ -1,6 +1,6 @@
 {
     "name": "validator-library",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "Data validator library",
     "main": "./dist/index.js",
     "scripts": {

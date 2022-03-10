@@ -1,8 +1,9 @@
 export const VALUE = {
+    isNull: (value: any): boolean => value === null || value === undefined,
+
     isEmpty: (value: any): boolean =>
+        VALUE.isNull(value) ||
         value === '' ||
-        value === null ||
-        value === undefined ||
         (VALUE.isArray(value) && value.length === 0) ||
         (VALUE.isObject(value) && Object.keys(value).length === 0),
 

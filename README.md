@@ -57,6 +57,7 @@ Validator.STRING.
 Validator.VALUE.
 ```
 
+-   isNull
 -   isEmpty
 -   isString
 -   isNumber

@@ -1,4 +1,5 @@
 export declare const VALUE: {
+    isNull: (value: any) => boolean;
     isEmpty: (value: any) => boolean;
     isString: (value: any) => boolean;
     isNumber: (value: any) => boolean;

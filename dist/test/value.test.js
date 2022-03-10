@@ -1,6 +1,24 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const value_1 = require("../lib/value");
+test(`VALUE: isNull`, () => {
+    const tests = [
+        { value: null, result: true },
+        { value: undefined, result: true },
+        { value: '', result: false },
+        { value: [], result: false },
+        { value: {}, result: false },
+        { value: 'string', result: false },
+        { value: 123, result: false },
+        { value: true, result: false },
+        { value: new Date(), result: false },
+        { value: [1], result: false },
+        { value: { key: 'value' }, result: false },
+    ];
+    tests.forEach((test) => {
+        expect(value_1.VALUE.isNull(test.value)).toBe(test.result);
+    });
+});
 test(`VALUE: isEmpty`, () => {
     const tests = [
         { value: null, result: true },

@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.VALUE = void 0;
 exports.VALUE = {
-    isEmpty: (value) => value === '' ||
-        value === null ||
-        value === undefined ||
+    isNull: (value) => value === null || value === undefined,
+    isEmpty: (value) => exports.VALUE.isNull(value) ||
+        value === '' ||
         (exports.VALUE.isArray(value) && value.length === 0) ||
         (exports.VALUE.isObject(value) && Object.keys(value).length === 0),
     isString: (value) => typeof value === 'string',
