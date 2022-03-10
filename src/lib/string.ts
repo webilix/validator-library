@@ -1,22 +1,23 @@
-import * as rx from 'regex-library';
+import { RrgX } from 'regex-library';
+
 import { ARRAY } from './array';
 
 export const STRING = {
-    isEmail: (value: string): boolean => rx.EMAIL.get().test(value.toLowerCase()),
+    isEmail: (value: string): boolean => RrgX.EMAIL.get().test(value.toLowerCase()),
 
-    isUrl: (value: string): boolean => rx.URL.get(true).test(value),
+    isUrl: (value: string): boolean => RrgX.URL.get(true).test(value),
 
-    isMobile: (value: string): boolean => rx.MOBILE.get().test(value),
+    isMobile: (value: string): boolean => RrgX.MOBILE.get().test(value),
 
-    isNumeric: (value: string): boolean => rx.NUMERIC.get().test(value),
+    isNumeric: (value: string): boolean => RrgX.NUMERIC.get().test(value),
 
-    isDomain: (value: string): boolean => rx.DOMAIN.get().test(value),
+    isDomain: (value: string): boolean => RrgX.DOMAIN.get().test(value),
 
-    isDate: (value: string): boolean => rx.DATE.get().test(value),
+    isDate: (value: string): boolean => RrgX.DATE.get().test(value),
 
-    isTime: (value: string): boolean => rx.TIME.get().test(value),
+    isTime: (value: string): boolean => RrgX.TIME.get().test(value),
 
-    isJsonDate: (value: string): boolean => rx.JSON_DATE.get().test(value),
+    isJsonDate: (value: string): boolean => RrgX.JSON_DATE.get().test(value),
 
     isObjectId: (value: string): boolean => {
         if (value.length === 12) {

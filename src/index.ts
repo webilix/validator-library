@@ -1,3 +1,5 @@
-export * from './lib/array';
-export * from './lib/string';
-export * from './lib/value';
+import { ARRAY } from './lib/array';
+import { STRING } from './lib/string';
+import { VALUE } from './lib/value';
+
+export const Validator = { ARRAY, STRING, VALUE };

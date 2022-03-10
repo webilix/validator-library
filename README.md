@@ -20,16 +20,24 @@ npm install --save validator-library
 ## Usage
 
 ```typescript
-import * as vd from 'validator-library';
-vd.VALUE.isString('test');
+import { Validator } from 'validator-library';
+Validator.VALUE.isString('test');
 ```
 
 ## Array Validators
+
+```javascript
+Validator.ARRAY.
+```
 
 -   isUnique
 -   isIn
 
 ## String Validators
+
+```javascript
+Validator.STRING.
+```
 
 -   isEmail
 -   isUrl
@@ -44,6 +52,10 @@ vd.VALUE.isString('test');
 -   isBankCard
 
 ## Value Validators
+
+```javascript
+Validator.VALUE.
+```
 
 -   isEmpty
 -   isString
