@@ -12,6 +12,7 @@ export declare const Validator: {
         isDate: (value: string) => boolean;
         isTime: (value: string) => boolean;
         isJsonDate: (value: string) => boolean;
+        isIP4: (value: string) => boolean;
         isObjectId: (value: string) => boolean;
         isNationalCode: (value: string) => boolean;
         isBankCard: (value: string) => boolean;

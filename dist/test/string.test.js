@@ -119,6 +119,25 @@ test(`STRING: isJsonDate`, () => {
         expect(string_1.STRING.isJsonDate(test.value)).toBe(test.result);
     });
 });
+test(`STRING: isIP4`, () => {
+    const tests = [
+        { value: '', result: false },
+        { value: '256.0.0.0', result: false },
+        { value: '0.256.0.0', result: false },
+        { value: '0.0.256.0', result: false },
+        { value: '0.0.0.256', result: false },
+        { value: 'a.0.0.0', result: false },
+        { value: '0.a.0.0', result: false },
+        { value: '0.0.a.0', result: false },
+        { value: '0.0.0.a', result: false },
+        { value: '127.0.0.1', result: true },
+        { value: '0.0.0.0', result: true },
+        { value: '255.255.255.255', result: true },
+    ];
+    tests.forEach((test) => {
+        expect(string_1.STRING.isIP4(test.value)).toBe(test.result);
+    });
+});
 test(`STRING: isObjectId`, () => {
     const tests = [
         { value: '', result: false },

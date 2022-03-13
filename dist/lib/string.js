@@ -11,6 +11,7 @@ exports.STRING = {
     isDate: (value) => regex_library_1.RegX.DATE.get().test(value),
     isTime: (value) => regex_library_1.RegX.TIME.get().test(value),
     isJsonDate: (value) => regex_library_1.RegX.JSON_DATE.get().test(value),
+    isIP4: (value) => regex_library_1.RegX.IP4.get().test(value),
     isObjectId: (value) => {
         if (value.length === 12) {
             const bytes = Buffer.from(value);

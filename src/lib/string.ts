@@ -19,6 +19,8 @@ export const STRING = {
 
     isJsonDate: (value: string): boolean => RegX.JSON_DATE.get().test(value),
 
+    isIP4: (value: string): boolean => RegX.IP4.get().test(value),
+
     isObjectId: (value: string): boolean => {
         if (value.length === 12) {
             const bytes = Buffer.from(value);

@@ -1,6 +1,6 @@
 {
     "name": "validator-library",
-    "version": "2.0.2",
+    "version": "2.1.0",
     "description": "Data validator library",
     "main": "./dist/index.js",
     "scripts": {
@@ -29,6 +29,6 @@
         "typescript": "^4.6.2"
     },
     "dependencies": {
-        "regex-library": "^2.0.1"
+        "regex-library": "^2.1.0"
     }
 }

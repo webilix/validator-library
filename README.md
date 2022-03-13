@@ -47,6 +47,7 @@ Validator.STRING.
 -   isDate
 -   isTime
 -   isJsonDate
+-   isIP4
 -   isObjectId
 -   isNationalCode
 -   isBankCard
