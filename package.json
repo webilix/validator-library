@@ -1,6 +1,6 @@
 {
     "name": "validator-library",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "description": "Data validator library",
     "main": "./dist/index.js",
     "scripts": {
@@ -23,12 +23,12 @@
     },
     "homepage": "https://github.com/webilix/validator-library#readme",
     "devDependencies": {
-        "@types/jest": "^27.4.1",
+        "@types/jest": "^29.2.2",
         "@types/typescript": "^2.0.0",
-        "jest": "^27.5.1",
-        "typescript": "^4.6.2"
+        "jest": "^29.3.1",
+        "typescript": "^4.8.4"
     },
     "dependencies": {
-        "regex-library": "^2.1.0"
+        "regex-library": "^2.1.1"
     }
 }
