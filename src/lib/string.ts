@@ -1,6 +1,4 @@
-import { RegX } from 'regex-library';
-
-import { ARRAY } from './array';
+import { RegX } from '@webilix/regex-library';
 
 export const STRING = {
     isEmail: (value: string): boolean => RegX.EMAIL.get().test(value.toLowerCase()),

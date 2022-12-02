@@ -1,4 +1,4 @@
-# validator-library
+# @webilix/validator-library
 
 Data validator library
 
@@ -14,13 +14,13 @@ Data validator library
 ## Installation
 
 ```bash
-npm install --save validator-library
+npm install --save @webilix/validator-library
 ```
 
 ## Usage
 
 ```typescript
-import { Validator } from 'validator-library';
+import { Validator } from '@webilix/validator-library';
 Validator.VALUE.isString('test');
 ```
 

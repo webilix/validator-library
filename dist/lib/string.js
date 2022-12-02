@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.STRING = void 0;
-const regex_library_1 = require("regex-library");
+const regex_library_1 = require("@webilix/regex-library");
 exports.STRING = {
     isEmail: (value) => regex_library_1.RegX.EMAIL.get().test(value.toLowerCase()),
     isUrl: (value) => regex_library_1.RegX.URL.get(true).test(value),
