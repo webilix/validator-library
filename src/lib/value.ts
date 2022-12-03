@@ -1,15 +1,5 @@
 export const VALUE = {
-    isNull: (value: any): boolean => value === null || value === undefined,
-
-    isEmpty: (value: any): boolean =>
-        VALUE.isNull(value) ||
-        value === '' ||
-        (VALUE.isArray(value) && value.length === 0) ||
-        (VALUE.isObject(value) && Object.keys(value).length === 0),
-
-    isString: (value: any): boolean => typeof value === 'string',
-
-    isNumber: (value: any): boolean => typeof value === 'number' && !isNaN(value),
+    isArray: (value: any): boolean => Array.isArray(value),
 
     isBoolean: (value: any): boolean => typeof value === 'boolean',
 
@@ -19,8 +9,18 @@ export const VALUE = {
         return !isNaN(date.getTime());
     },
 
-    isArray: (value: any): boolean => Array.isArray(value),
+    isEmpty: (value: any): boolean =>
+        VALUE.isNull(value) ||
+        value === '' ||
+        (VALUE.isArray(value) && value.length === 0) ||
+        (VALUE.isObject(value) && Object.keys(value).length === 0),
+
+    isNull: (value: any): boolean => value === null || value === undefined,
+
+    isNumber: (value: any): boolean => typeof value === 'number' && !isNaN(value),
 
     isObject: (value: any): boolean =>
         value !== null && typeof value == 'object' && !VALUE.isArray(value) && !VALUE.isDate(value),
+
+    isString: (value: any): boolean => typeof value === 'string',
 };

@@ -30,8 +30,8 @@ Validator.VALUE.isString('test');
 Validator.ARRAY.
 ```
 
--   isUnique
 -   isIn
+-   isUnique
 
 ## String Validators
 
@@ -39,18 +39,19 @@ Validator.ARRAY.
 Validator.STRING.
 ```
 
--   isEmail
--   isUrl
--   isMobile
--   isNumeric
--   isDomain
--   isDate
--   isTime
--   isJsonDate
--   isIP4
--   isObjectId
--   isNationalCode
 -   isBankCard
+-   isDate
+-   isDomain
+-   isEmail
+-   isHexColor
+-   isIP4
+-   isJsonDate
+-   isMobile
+-   isNationalCode
+-   isNumeric
+-   isObjectId
+-   isTime
+-   isUrl
 
 ## Value Validators
 
@@ -58,14 +59,14 @@ Validator.STRING.
 Validator.VALUE.
 ```
 
--   isNull
--   isEmpty
--   isString
--   isNumber
+-   isArray
 -   isBoolean
 -   isDate
--   isArray
+-   isEmpty
+-   isNull
+-   isNumber
 -   isObject
+-   isString
 
 ## Tests
 
