@@ -1,5 +1,10 @@
 # @webilix/validator-library
 
+<div style="color: rgb(255, 100, 100); font-weight 600; font-size: 16px; border: 1px solid rgb(255, 100, 100); padding: 1rem">
+This package has been deprecated, please use <a href="https://github.com/webilix/helper-library">@webilix/helper-library</a> instead.
+</div>
+<br><br>
+
 Data validator library
 
 ## Table of contents
